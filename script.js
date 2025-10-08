@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // عرض النتيجة للمستخدم
-        feedbackDiv.style.display = "block";
-        if (isValid) {
-            feedbackDiv.textContent = "✅ تم التسجيل بنجاح!";
-            feedbackDiv.style.color = "#28a745";
-            feedbackDiv.style.backgroundColor = "#d4edda";
-        } else {
-            feedbackDiv.innerHTML = messages.join("<br>");
-            feedbackDiv.style.color = "#dc3545";
-            feedbackDiv.style.backgroundColor = "#f8d7da";
-        }
+       feedbackDiv.style.display = "block";
+
+if (isValid) {
+    feedbackDiv.textContent = "Registration successful!";
+    feedbackDiv.style.color = "#28a745";
+} else {
+    feedbackDiv.innerHTML = messages.join("<br>");
+    feedbackDiv.style.color = "#dc3545";
+}
+
     });
 });
